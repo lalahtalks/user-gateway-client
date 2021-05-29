@@ -11,6 +11,11 @@ import java.net.URI;
 @Getter
 public enum UserGatewayProblemType implements ProblemType {
 
+    ACCOUNT_NOT_FOUND(
+            URI.create("urn:lalahtalks:problem:user-gateway:account-not-found"),
+            "Account not found",
+            Status.NOT_FOUND),
+
     ACCOUNT_ALREADY_EXISTS(
             URI.create("urn:lalahtalks:problem:user-gateway:account-already-exists"),
             "Account already exists",
