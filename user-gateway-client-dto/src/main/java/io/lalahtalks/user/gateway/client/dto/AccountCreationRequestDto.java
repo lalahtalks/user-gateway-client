@@ -2,19 +2,19 @@ package io.lalahtalks.user.gateway.client.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 @Builder
 public class AccountCreationRequestDto {
 
     @JsonProperty("email")
-    private String email;
+    String email;
 
     @JsonProperty("username")
-    private String username;
+    String username;
 
     @JsonProperty("password")
-    private String password;
+    String password;
 
 }

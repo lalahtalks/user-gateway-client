@@ -2,24 +2,24 @@ package io.lalahtalks.user.gateway.client.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Value;
 
 import java.time.Instant;
 
-@Data
+@Value
 @Builder
 public class AccountDto {
 
     @JsonProperty("id")
-    private String id;
+    String id;
 
     @JsonProperty("email")
-    private String email;
+    String email;
 
     @JsonProperty("username")
-    private String username;
+    String username;
 
     @JsonProperty("createdAt")
-    private Instant createdAt;
+    Instant createdAt;
 
 }

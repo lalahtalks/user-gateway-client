@@ -7,8 +7,7 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor(access = PRIVATE)
 public class UserGatewayHttpPaths {
 
-    public static final String ACCOUNTS_PATH = "/accounts";
-    public static final String MINE_PATH = "/mine";
-    public static final String MY_ACCOUNT_PATH = ACCOUNTS_PATH + MINE_PATH;
+    public static final String MY_ACCOUNT_PATH = "/my-account";
+    public static final String MY_SECRETS_PATH = "/my-secrets";
 
 }

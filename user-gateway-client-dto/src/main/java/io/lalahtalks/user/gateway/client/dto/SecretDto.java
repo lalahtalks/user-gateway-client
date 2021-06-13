@@ -8,10 +8,16 @@ import java.time.Instant;
 
 @Value
 @Builder
-public class AccountCreatedDto {
+public class SecretDto {
 
-    @JsonProperty("accountId")
-    String accountId;
+    @JsonProperty("id")
+    String id;
+
+    @JsonProperty("name")
+    String name;
+
+    @JsonProperty("encoded")
+    String encoded;
 
     @JsonProperty("createdAt")
     Instant createdAt;
