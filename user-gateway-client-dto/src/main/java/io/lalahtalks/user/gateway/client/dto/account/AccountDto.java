@@ -1,13 +1,13 @@
-package io.lalahtalks.user.gateway.client.dto;
+package io.lalahtalks.user.gateway.client.dto.account;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.Instant;
 
-public record SecretDto(
+public record AccountDto(
         @JsonProperty("id") String id,
-        @JsonProperty("name") String name,
-        @JsonProperty("encoded") String encoded,
+        @JsonProperty("email") String email,
+        @JsonProperty("username") String username,
         @JsonProperty("createdAt") Instant createdAt) {
 
 }

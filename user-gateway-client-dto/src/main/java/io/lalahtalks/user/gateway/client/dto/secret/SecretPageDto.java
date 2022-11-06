@@ -1,4 +1,4 @@
-package io.lalahtalks.user.gateway.client.dto;
+package io.lalahtalks.user.gateway.client.dto.secret;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
